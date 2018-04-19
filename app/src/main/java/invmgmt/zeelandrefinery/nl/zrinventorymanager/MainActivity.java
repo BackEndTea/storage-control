@@ -72,13 +72,9 @@ public class MainActivity extends AppCompatActivity {
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         // Set Toolbar
-        if (toolbar != null) {
-            toolbar.setLogo(R.mipmap.ic_launcher);
-        }
+
         setSupportActionBar(toolbar); // Setting toolbar as the ActionBar with setSupportActionBar()
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setLogo(R.mipmap.ic_launcher);
-        }
+
 
         // Set the drawer toggle as the DrawerListener
         mDrawerToggle = new ActionBarDrawerToggle(

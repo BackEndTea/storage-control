@@ -4,6 +4,7 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Handler;
+import android.provider.ContactsContract;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -159,7 +160,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.nav_first_fragment:
                 fragmentClass = MainFragment.class;
                 break;
-
+            case R.id.nav_second_fragment:
+                fragmentClass = DatabaseFragment.class;
+                break;
+            case R.id.nav_third_fragment:
+                fragmentClass = TestFragment.class;
+                break;
 
             default:
                 fragmentClass = MainFragment.class;
